@@ -9,7 +9,7 @@ const main = document.querySelector("main");
 const yourmail = document.querySelector(".yourmail");
 
 form.addEventListener("submit", (e) => {
- e.preventDefault();
+ e.preventDefault(); //prevents the default behavior of form submission, which is to reload the page.
 
  const emailValue = emailInput.value.trim();
  if (!isValidEmail(emailValue)) {
